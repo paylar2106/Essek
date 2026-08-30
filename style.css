@@ -1,3 +1,9 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: #090b18;
+}
+
 * {
     box-sizing: border-box;
 }
