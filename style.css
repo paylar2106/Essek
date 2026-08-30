@@ -59,18 +59,23 @@ body {
 }
 
 .counter {
-    display: flex;
+    width: 100%;
 
+    display: flex;
     justify-content: center;
     align-items: center;
+
+    padding: 0 20px;
 }
 
 #counterNumber {
-    font-size: clamp(3rem, 13vw, 18rem);
-
+    font-size: clamp(2.5rem, 9vw, 11rem);
     font-weight: 300;
 
-    letter-spacing: -0.07em;
+    letter-spacing: -0.06em;
+    white-space: nowrap;
+
+    max-width: 94vw;
 
     color: rgba(255, 255, 255, 0.55);
 
@@ -199,17 +204,18 @@ body.green-background {
         opacity: 1;
         transform:
 
-            /* Telefon ekranları */
-@media (max-width: 600px) {
+/* Telefon ve tablet */
+@media (max-width: 1024px) {
 
     .counter-container {
-        padding-left: 16px;
-        padding-right: 16px;
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     #counterNumber {
-        font-size: 12vw;
-        letter-spacing: -0.05em;
+        font-size: 9vw;
+        letter-spacing: -0.06em;
     }
 
     .counter-title {
@@ -218,12 +224,19 @@ body.green-background {
     }
 
     #finalImage {
-        width: min(350px, 82vw);
+        width: min(380px, 82vw);
         max-height: 70vh;
         object-fit: contain;
     }
 }
-            translate(-50%, -50%)
-            scale(1);
+
+
+/* Özellikle dar dikey telefonlar */
+@media (max-width: 500px) {
+
+    #counterNumber {
+        font-size: 8.5vw;
+        letter-spacing: -0.05em;
     }
+
 }
