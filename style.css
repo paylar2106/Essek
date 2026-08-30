@@ -198,6 +198,31 @@ body.green-background {
     100% {
         opacity: 1;
         transform:
+
+            /* Telefon ekranları */
+@media (max-width: 600px) {
+
+    .counter-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    #counterNumber {
+        font-size: 12vw;
+        letter-spacing: -0.05em;
+    }
+
+    .counter-title {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    #finalImage {
+        width: min(350px, 82vw);
+        max-height: 70vh;
+        object-fit: contain;
+    }
+}
             translate(-50%, -50%)
             scale(1);
     }
