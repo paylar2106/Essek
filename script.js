@@ -5,7 +5,7 @@ const ctx = canvas.getContext("2d");
 
 
 // HEDEF TARİH VE SAAT
-const targetDate = new Date("2026-08-31T20:00:00");
+const targetDate = new Date("2026-08-30T22:55:00");
 
 const finalImage = document.getElementById("finalImage");
 
